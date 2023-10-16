@@ -18,7 +18,10 @@ export default function TopHeader() {
         <Link to="/">Home</Link>
         <Link to="ourStory">Our Story</Link>
       </div>
-      <div className="black-background">Last Chance To Receive 50% off </div>
+      <div className="black-background">
+        Last Chance To Receive 50% off with new Registration:
+        <Link className="signUp">Sign Up Today</Link>
+      </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/ourStory" element={<OurStory />} />

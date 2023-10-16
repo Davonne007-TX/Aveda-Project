@@ -34,10 +34,14 @@ p {
 }
 
 p:hover {
-  color: white;
+  color: pink;
   cursor: pointer;
 }
 
+.signUp {
+  color: white;
+  font-weight: bold;
+}
 .black-background {
   color: white;
   background-color: black;
