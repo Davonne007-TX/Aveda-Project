@@ -1,3 +1,5 @@
+import "./css/HairScalp.css";
+
 export default function HairScalp() {
-  return <div>Hair-Scalp</div>;
+  return <h2>Hair & Scalp</h2>;
 }

@@ -1,3 +1,3 @@
 export default function SkinBody() {
-  return <div>SkinBody</div>;
+  return <h2>Skin & Body</h2>;
 }

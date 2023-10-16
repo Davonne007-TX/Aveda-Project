@@ -1,3 +1,5 @@
+import "./css/OurStory.css";
+
 export default function OurStory() {
-  return <div>Our story</div>;
+  return <h2>Our Story</h2>;
 }

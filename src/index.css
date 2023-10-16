@@ -12,3 +12,8 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+h2 {
+  margin-top: 80px;
+  color: black;
+}
