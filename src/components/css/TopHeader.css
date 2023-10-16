@@ -11,6 +11,20 @@ h1 {
   font-family: "Lobster", cursive;
 }
 
+.navigation,
+a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.navigation,
+a:hover {
+  color: pink;
+  cursor: pointer;
+}
+
 p {
   color: black;
   font-family: sans-serif;

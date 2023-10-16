@@ -1,3 +1,5 @@
+import "./css/Home.css";
+
 export default function Home() {
-  return <div>Home</div>;
+  return <img src="/images/salon.jpg" className="salonImg" />;
 }

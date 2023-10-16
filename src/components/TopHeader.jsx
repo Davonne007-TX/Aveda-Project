@@ -1,5 +1,8 @@
 import React from "react";
-import "../css/TopHeader.css";
+import { Routes, Route, Link } from "react-router-dom";
+import "./css/TopHeader.css";
+import Home from "./Home";
+import OurStory from "./OurStory";
 
 export default function TopHeader() {
   return (
@@ -10,7 +13,16 @@ export default function TopHeader() {
         <p>Sign in</p>
       </div>
       <h1>Ava's</h1>
+
+      <div className="navigation">
+        <Link to="/">Home</Link>
+        <Link to="ourStory">Our Story</Link>
+      </div>
       <div className="black-background">Last Chance To Receive 50% off </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/ourStory" element={<OurStory />} />
+      </Routes>
     </>
   );
 }
