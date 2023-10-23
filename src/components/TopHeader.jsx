@@ -7,14 +7,32 @@ import HairScalp from "./HairScalp";
 import SkinBody from "./SkinBody";
 import { Styling } from "./Styling";
 import Register from "./Register";
+import SignIn from "./SignIn";
+import JoinRewards from "./JoinRewards";
+import FindLocations from "./FindLocations";
 
 export default function TopHeader() {
+  //useNavigate
+  const navigate = useNavigate();
+
+  function goToSignIn() {
+    navigate("/signIn");
+  }
+
+  function joinRewards() {
+    navigate("/joinRewards");
+  }
+
+  function findLocations() {
+    navigate("/findLocations");
+  }
+
   return (
     <>
       <div className="top-header">
-        <p>Find Stores & Salons</p>
-        <p>Join Rewards</p>
-        <p>Sign in</p>
+        <p onClick={findLocations}>Find Stores & Salons</p>
+        <p onClick={joinRewards}>Join Rewards</p>
+        <p onClick={goToSignIn}>Sign in</p>
       </div>
       <h1>Ava's</h1>
 
@@ -38,6 +56,9 @@ export default function TopHeader() {
         <Route path="/skin-body" element={<SkinBody />} />
         <Route path="/styling" element={<Styling />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/signIn" element={<SignIn />} />
+        <Route path="/joinRewards" element={<JoinRewards />} />
+        <Route path="/findLocations" element={<FindLocations />} />
       </Routes>
     </>
   );
