@@ -6,6 +6,7 @@ import OurStory from "./OurStory";
 import HairScalp from "./HairScalp";
 import SkinBody from "./SkinBody";
 import { Styling } from "./Styling";
+import Register from "./Register";
 
 export default function TopHeader() {
   return (
@@ -26,7 +27,9 @@ export default function TopHeader() {
       </div>
       <div className="black-background">
         Last Chance To Receive 50% off with new Registration:
-        <Link className="signUp">Sign Up Today</Link>
+        <Link to="/register" className="signUp">
+          Sign Up Today
+        </Link>
       </div>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -34,6 +37,7 @@ export default function TopHeader() {
         <Route path="/hair-scalp" element={<HairScalp />} />
         <Route path="/skin-body" element={<SkinBody />} />
         <Route path="/styling" element={<Styling />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </>
   );
