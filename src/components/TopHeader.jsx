@@ -15,6 +15,10 @@ export default function TopHeader() {
   //useNavigate
   const navigate = useNavigate();
 
+  function goToHome() {
+    navigate("/");
+  }
+
   function goToSignIn() {
     navigate("/signIn");
   }
@@ -34,7 +38,7 @@ export default function TopHeader() {
         <p onClick={joinRewards}>Join Rewards</p>
         <p onClick={goToSignIn}>Sign in</p>
       </div>
-      <h1>Ava's</h1>
+      <h1 onClick={goToHome}>Ava's</h1>
 
       <div className="navigation">
         <Link to="/">Home</Link>
