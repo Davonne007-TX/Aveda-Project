@@ -11,7 +11,7 @@ export default function Register() {
         <div className="flex">
           <div className="w-1/2 pr-4">
             {/* First Column */}
-            <div className="mb-2">
+            <div className="mb-8">
               <label className="block text-gray-700">First Name:</label>
               <input
                 type="text"
@@ -20,7 +20,7 @@ export default function Register() {
               />
             </div>
 
-            <div className="mb-2">
+            <div className="mb-8">
               <label className="block text-gray-700">Last Name:</label>
               <input
                 type="text"
@@ -32,7 +32,7 @@ export default function Register() {
 
           <div className="w-1/2 pl-4">
             {/* Second Column */}
-            <div className="mb-2">
+            <div className="mb-8">
               <label className="block text-gray-700">Password:</label>
               <input
                 type="password"
@@ -41,7 +41,7 @@ export default function Register() {
               />
             </div>
 
-            <div className="mb-2">
+            <div className="mb-8">
               <label className="block text-gray-700">E-mail:</label>
               <input
                 type="text"
@@ -54,7 +54,7 @@ export default function Register() {
 
         <button
           type="button"
-          className="bg-pink-200 text-white font-bold p-2 mt-5 rounded hover:text-black w-full"
+          className="bg-pink-200 text-white font-bold p-2 mt-2 rounded hover:text-black w-full"
         >
           Submit
         </button>
