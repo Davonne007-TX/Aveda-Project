@@ -38,9 +38,11 @@ export default function TopHeader() {
         <p onClick={joinRewards}>Join Rewards</p>
         <p onClick={goToSignIn}>Sign in</p>
       </div>
-      <h1 onClick={goToHome}>Ava's</h1>
+      <h1 onClick={goToHome} className="mt-10 text-3xl font-lobster">
+        Ava's
+      </h1>
 
-      <div className="navigation">
+      <div className="navigation text-black">
         <Link to="/">Home</Link>
         <Link to="ourStory">Our Story</Link>
         <Link to="/hair-scalp">Hair & Scalp</Link>
