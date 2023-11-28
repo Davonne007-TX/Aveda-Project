@@ -7,7 +7,7 @@ import HairScalp from "./HairScalp";
 import SkinBody from "./SkinBody";
 import { Styling } from "./Styling";
 import Register from "./Register";
-import SignIn from "./SignIn";
+import Login from "./Login";
 import JoinRewards from "./JoinRewards";
 import FindLocations from "./FindLocations";
 import { Account } from "./Account";
@@ -21,7 +21,7 @@ export default function TopHeader() {
   }
 
   function goToSignIn() {
-    navigate("/signIn");
+    navigate("/login");
   }
 
   function joinRewards() {
@@ -64,7 +64,7 @@ export default function TopHeader() {
         <Route path="/skin-body" element={<SkinBody />} />
         <Route path="/styling" element={<Styling />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/signIn" element={<SignIn />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/joinRewards" element={<JoinRewards />} />
         <Route path="/findLocations" element={<FindLocations />} />
         <Route path="/account" element={<Account />} />
