@@ -6,8 +6,15 @@ export default function Login() {
 
   const navigate = useNavigate();
 
-  const handelSubmit = () => {
-    setUserName(userName);
+  const inputtedUsername = (e) => {
+    setUserName(e.target.value);
+  };
+
+  const handelSubmit = async (e) => {
+    e.preventDefault();
+
+    console.log(userName);
+    alert(`Welcome ${userName}!`);
     navigate("/account");
   };
 
@@ -28,7 +35,7 @@ export default function Login() {
             value={userName}
             className=" border border-gray-500 outline-none rounded-md p-2 w-3/5 ml-2"
             placeholder="Enter Username"
-            onChange={(e) => setUserName(e.target.value)}
+            onChange={inputtedUsername}
           />
         </div>
 
@@ -42,7 +49,7 @@ export default function Login() {
         </div>
 
         <button
-          type="button"
+          type="submit"
           className="bg-pink-200 text-white font-bold p-2 mt-2 rounded hover:text-black"
         >
           Submit
