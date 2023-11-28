@@ -21,7 +21,7 @@ export default function Register() {
             </div>
 
             <div className="mb-8">
-              <label className="block text-gray-700">Last Name:</label>
+              <label className="block text-gray-700">Password:</label>
               <input
                 type="text"
                 className="form-input border border-gray-500 outline-none rounded-md p-2 w-full"
@@ -33,7 +33,7 @@ export default function Register() {
           <div className="w-1/2 pl-4">
             {/* Second Column */}
             <div className="mb-8">
-              <label className="block text-gray-700">Password:</label>
+              <label className="block text-gray-700">Last Name:</label>
               <input
                 type="password"
                 className="form-input border border-gray-500 outline-none rounded-md p-2 w-full"

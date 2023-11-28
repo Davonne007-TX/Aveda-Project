@@ -21,12 +21,12 @@ export default function SignIn() {
           Login
         </h2>
 
-        <div className="mb-8 flex justify-center">
+        <div className="mb-8 flex justify-center ">
           <label className="block text-gray-700">Username:</label>
           <input
             type="text"
             value={userName}
-            className=" border border-gray-500 outline-none rounded-md p-2 w-3/5 ml-5"
+            className=" border border-gray-500 outline-none rounded-md p-2 w-3/5 ml-2"
             placeholder="Enter Username"
             onChange={(e) => setUserName(e.target.value)}
           />
