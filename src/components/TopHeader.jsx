@@ -10,6 +10,7 @@ import Register from "./Register";
 import SignIn from "./SignIn";
 import JoinRewards from "./JoinRewards";
 import FindLocations from "./FindLocations";
+import { Account } from "./Account";
 
 export default function TopHeader() {
   //useNavigate
@@ -48,6 +49,7 @@ export default function TopHeader() {
         <Link to="/hair-scalp">Hair & Scalp</Link>
         <Link to="skin-body">Skin & Body</Link>
         <Link to="/styling">Styling</Link>
+        <Link to="/account">Account</Link>
       </div>
       <div className="black-background">
         Last Chance To Receive 50% off with new Registration:
@@ -65,6 +67,7 @@ export default function TopHeader() {
         <Route path="/signIn" element={<SignIn />} />
         <Route path="/joinRewards" element={<JoinRewards />} />
         <Route path="/findLocations" element={<FindLocations />} />
+        <Route path="/account" element={<Account />} />
       </Routes>
     </>
   );
